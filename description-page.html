@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BULLSHIT INDEX</title>
+    <style>
+        @font-face {
+            font-family: 'Alte Haas';
+            src: url('AlteHaasGroteskRegular.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Alte Haas Bold';
+            src: url('AlteHaasGroteskBold.ttf') format('truetype');
+        }
+
+        body {
+            font-family: Alte Haas, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0.4%;
+            overflow-y: scroll;
+        }
+
+        .header {
+            background: linear-gradient(to bottom,
+            rgba(244, 244, 244, 1) 0%,
+            rgba(244, 244, 244, 0.7) 50%,
+            rgba(244, 244, 244, 0.0) 100%);
+            backdrop-filter: blur(0.5px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 10%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0.55% 0px 0px 1.16%;
+        }
+
+        .header::after {
+            
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                to bottom, 
+                rgba(244, 244, 244, 1) 0%,
+                rgba(244, 244, 244, 0.7) 50%,
+                rgba(244, 244, 244, 0.0) 100%
+            );
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            mask-image: linear-gradient(
+                to bottom, 
+                rgba(0, 0, 0, 1) 0%, 
+                rgba(0, 0, 0, 0.7) 50%, 
+                rgba(0, 0, 0, 0) 100%
+            );
+            mask-composite: intersect;
+            z-index: -1;
+        }
+
+        h1 {
+            margin: 0;
+            color: #333;
+            font-family: Alte Haas Bold, sans-serif;
+            width:22%;
+            z-index:2200;
+            position: relative;
+        }
+
+        .view-mode-button {
+            font-family: Alte Haas Bold, sans-serif;
+            background-color: #f4f4f4;
+
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width:10%;
+        }
+
+        .filter-button {
+            font-family: Alte Haas Bold, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            border:none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: block;
+            box-shadow: 0px 2px 10px rgba(51, 55, 3, 0.287);
+            font-size: 1vw;
+            gap: 0.36vw;
+            flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+        }
+
+        .view-mode-button:hover, .filter-button:hover {
+            background-color: #f4f4f4;
+            color: rgb(120, 120, 120);
+        }
+
+        .button-container1{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.36vw;
+            margin:0.7%;
+            align-items: start; 
+            width:5%;
+            flex-direction: column;
+        }
+        .button-container2{
+            display: flex; 
+            flex-wrap: wrap;
+            gap: 0.36vw;
+            margin:0.7%;
+            align-items: start; 
+            width:33.3%;justify-content: flex-start;
+            align-content: flex-start;
+            flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+        }
+        .button-container3{
+            display: flex; 
+            flex-wrap: wrap;
+            gap: 0.36vw;
+            margin:0.7%;
+            align-items: start; 
+            width:22%;justify-content: flex-start;
+            align-content: flex-start;
+            flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+        }
+        .button-container4{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top:0.7%;
+            align-items: start; 
+            flex-direction: column;
+            font-family: Alte Haas Bold, sans-serif;
+            width:3.6%;
+            z-index: 2200;
+            
+        }
+        .button-container4 button {
+            padding: 0;
+        }
+        table {
+            width: 100%;
+            table-layout: fixed;
+            line-height: 1.4;
+            text-align: left;
+            padding: 0.5%;
+            margin-top: 6%;
+        }
+
+        th, td {
+            padding: 0px 20px 30px 20px;
+            padding: 0px 0.78vw 1.15vw 0.78vw;
+            font-size: 1.16vw; 
+            vertical-align: top;
+        }
+        .col-number {
+    width: 5%;
+}
+        th {
+            color: black;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .source {
+            width: 20%;
+            word-wrap: break-word;
+            max-width: 30vw; 
+            padding-right: 7%;
+        }
+        .title{
+            width: 16%;
+            text-transform: uppercase;
+        }
+        .year{
+            width: 7%;
+        }
+        .description {
+            text-align: left;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .filter-button.active {
+            background-color: #333333b3;
+            color: rgb(244, 244, 244);
+        }
+
+        .view-mode-button img {
+    width: 1.9vw;
+    height:1.9vw;
+    transition: filter 0.3s ease; /* 이미지 필터 전환 */
+}
+
+
+.view-mode-button:hover img {
+    filter: brightness(1) invert(0.55); /* 호버 시 이미지 색상 반전 */
+}
+.col-number {
+    width: 0.5%;
+}
+.col-title {
+    width: 8.5%;
+}
+.col-year {
+    width: 2.8%;
+}
+.col-description {
+    width: 24.5%;
+}
+.col-source {
+    width: 18%;
+}
+
+.clickable-title {
+    margin: 0;
+    font-size: 2.6vw;
+
+    color: #333; /* Default color */
+    font-family: Alte Haas Bold, sans-serif;
+    width: 22%;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth transition */
+    z-index: 2200;
+}
+#info{ display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* 전체 화면 너비 */
+    height: 100vw;
+    background-color: #f4f4f4;
+
+    backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            
+    z-index: 1100;}
+/* Change color on hover */
+.clickable-title:hover {
+    color: rgb(120, 120, 120); /* Hover color */
+}
+.info-container{
+margin:1% 9% 20% 27.5%;
+
+font-size:1vw;
+line-height: 140%;
+
+color:#333
+
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- Header Section: Title and Button in a Single Row -->
+    <div class="header">
+        <h1 class="clickable-title" onclick="toggleInfo(this)" data-active="false">BULLSHIT INDEX</h1>
+        <div class="button-container4">
+            <button class="view-mode-button" onclick="location.href='image-gallery.html'"><img src="arrow2.png" alt="View Modeå"></button>
+        </div>
+        <div id="info">
+            <div class="info-container">
+                
+                We often feel vague fear or anxiety about the unknown, which leads us to form specific beliefs driven by a desire to control and understand. These beliefs can be seen as unconscious attempts to resolve uncertainty and create a safe zone away from the unknown. To alleviate anxiety, people sometimes fall into deception or give in to the desire to believe what they want. The need for certainty often results in misguided beliefs or misunderstandings.
+                <br><br>
+                These misunderstandings can arise from fear driven accusations, exaggerated expectations, or manipulation of information, leading to uncritical acceptance of certain beliefs. Over time, these beliefs spread within society, causing people to accept them as truth. From conspiracy theories and pseudoscientific claims to urban legends and propaganda, such ideas gain traction, often despite lacking evidence. When one side makes a claim, the other side challenges it, creating a tense back and forth. The side with stronger evidence prevails, while the other collapses. This cycle has repeated throughout human history. <br><br>
+                Bullshit Index is an archive of misleading beliefs, things once believed but now considered debunked or unfounded. The bullshit in this index ranges from lighthearted and humorous misunderstandings to serious, impactful deceptions that have shaped public perception or policy. This index captures how these beliefs are formed, spread, and eventually lead to disillusionment, focusing the social and psychological dynamics behind their persistence and eventual collapse.
+                
+                </div>
+         
+        </div>
+        
+        <div class="button-container1">
+            <button class="filter-button" onclick="sortByAZ()">A-Z</button>
+            <button class="filter-button" onclick="sortByOldest()">OLDEST</button>
+            <button class="filter-button" onclick="sortByNewest()">LATEST</button>
+        </div>
+        <div class="button-container2">
+            <button class="filter-button" onclick="filterByCategory('SUPERSTITION')">SUPERSTITION</button>
+            <button class="filter-button" onclick="filterByCategory('CONSPIRACY')">CONSPIRACY</button>
+            <button class="filter-button" onclick="filterByCategory('SATIRE')">SATIRE</button>
+            <button class="filter-button" onclick="filterByCategory('MYTH')">MYTH</button>
+            <button class="filter-button" onclick="filterByCategory('MARKETING')">MARKETING</button>
+            <button class="filter-button" onclick="filterByCategory('SCAM')">SCAM</button>
+            <button class="filter-button" onclick="filterByCategory('MISBELIEF')">MISBELIEF</button>
+            <button class="filter-button" onclick="filterByCategory('URBANLEGEND')">URBANLEGEND</button>
+            <button class="filter-button" onclick="filterByCategory('PROPAGANDA')">PROPAGANDA</button>
+            <button class="filter-button" onclick="filterByCategory('DENIALISM')">DENIALISM</button>
+            <button class="filter-button" onclick="filterByCategory('HOAX')">HOAX</button>
+            <button class="filter-button" onclick="filterByCategory('PSEUDOSCIENCE')">PSEUDOSCIENCE</button>
+            <button class="filter-button" onclick="filterByCategory('PHOBIA')">PHOBIA</button>
+        </div>
+        <div class="button-container3">
+            <button class="filter-button" onclick="filterByYear('pre-1900')">PRE 1900</button>
+            <button class="filter-button" onclick="filterByYear('1900s')">1900s</button>
+            <button class="filter-button" onclick="filterByYear('1910s')">1910s</button>
+            <button class="filter-button" onclick="filterByYear('1920s')">1920s</button>
+            <button class="filter-button" onclick="filterByYear('1930s')">1930s</button>
+            <button class="filter-button" onclick="filterByYear('1940s')">1940s</button>
+            <button class="filter-button" onclick="filterByYear('1950s')">1950s</button>
+            <button class="filter-button" onclick="filterByYear('1960s')">1960s</button>
+            <button class="filter-button" onclick="filterByYear('1970s')">1970s</button>
+            <button class="filter-button" onclick="filterByYear('1980s')">1980s</button>
+            <button class="filter-button" onclick="filterByYear('1990s')">1990s</button>
+            <button class="filter-button" onclick="filterByYear('2000s')">2000s</button>
+            <button class="filter-button" onclick="filterByYear('2010s')">2010s</button>
+            <button class="filter-button" onclick="filterByYear('2020s')">2020s</button>
+        </div>
+    </div>
+
+    <!-- Description Table -->
+    <table id="description-table">
+        <thead>
+            <tr>
+                <td class="col-number"></td>
+                <td class="col-title"></td>
+                <td class="col-year"></td>
+                <td class="col-description"></td>
+                <td class="col-source"><a href="${item.source}" target="_blank"></a></td>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table content will be dynamically generated -->
+        </tbody>
+    </table>
+
+    <script>
+        const jsonFile = 'data.json'; // JSON 파일 경로
+
+        let originalData = []; // 원본 데이터
+        let currentData = [];  // 필터 및 정렬이 적용된 데이터
+        let currentFilters = {
+            category: null,
+            year: null
+        };
+        let currentSort = {
+            type: null // 기본적으로 정렬 유형이 없음
+        };
+
+        // JSON 데이터 로드
+        fetch(jsonFile)
+            .then(response => response.json())
+            .then(data => {
+                originalData = data;
+                currentData = [...originalData];
+                applyFiltersAndSorting(); // 초기 렌더링
+            })
+            .catch(error => console.error('Error loading JSON data:', error));
+
+        // 테이블 렌더링 함수
+        function renderTable(data) {
+            const tableBody = document.querySelector('#description-table tbody');
+            tableBody.innerHTML = ''; // 기존 내용 삭제
+
+            data.forEach((item, index) => {
+                const row = document.createElement('tr');
+                row.setAttribute('data-year', item.year);
+                row.setAttribute('data-category', item.category);
+                row.innerHTML = `
+                    <td>${index + 1}</td> <!-- 행 번호 -->
+                    <td class="title">${item.title}</td>
+                    <td class="year">${item.year}</td>
+                    <td class="description">${item.description}</td>
+                    <td class="source"><a href="${item.source}" target="_blank">${item.source}</a></td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        // 필터 및 정렬 적용 함수
+        function applyFiltersAndSorting() {
+            let filteredData = [...originalData];
+
+            // 카테고리 필터 적용
+            if (currentFilters.category) {
+                filteredData = filteredData.filter(item => item.category && item.category.includes(currentFilters.category));
+            }
+
+            // 연도 필터 적용
+            if (currentFilters.year) {
+                filteredData = filteredData.filter(item => {
+                    const itemYear = item.year;
+                    const filterYear = currentFilters.year;
+                    if (filterYear === 'pre-1900') {
+                        return parseInt(itemYear) < 1900 || itemYear.includes('BC');
+                    } else if (filterYear === 'all') {
+                        return true;
+                    } else {
+                        return itemYear && itemYear.startsWith(filterYear.slice(0, 3));
+                    }
+                });
+            }
+
+            // 정렬 적용
+            if (currentSort.type === 'oldest') {
+                filteredData.sort((a, b) => {
+                    if (a.year.includes('BC unknown')) return -1;
+                    if (b.year.includes('BC unknown')) return 1;
+
+                    const yearA = a.year.includes('BC')
+                        ? -parseInt(a.year.replace('BC', '').trim())
+                        : parseInt(a.year);
+                    const yearB = b.year.includes('BC')
+                        ? -parseInt(b.year.replace('BC', '').trim())
+                        : parseInt(b.year);
+
+                    return yearA - yearB;
+                });
+            } else if (currentSort.type === 'newest') {
+                filteredData.sort((a, b) => {
+                    if (a.year.includes('BC unknown')) return 1;
+                    if (b.year.includes('BC unknown')) return -1;
+
+                    const yearA = a.year.includes('BC')
+                        ? -parseInt(a.year.replace('BC', '').trim())
+                        : parseInt(a.year);
+                    const yearB = b.year.includes('BC')
+                        ? -parseInt(b.year.replace('BC', '').trim())
+                        : parseInt(b.year);
+
+                    return yearB - yearA;
+                });
+            } else {
+                // 기본적으로 A-Z 정렬
+                filteredData.sort((a, b) => a.title.localeCompare(b.title));
+            }
+
+            currentData = filteredData;
+            renderTable(currentData);
+        }
+
+        // 카테고리 필터 토글 함수
+        function filterByCategory(category) {
+            if (currentFilters.category === category) {
+                currentFilters.category = null;
+            } else {
+                currentFilters.category = category;
+            }
+            updateFilterButtonClass('button-container2', category);
+            applyFiltersAndSorting();
+        }
+
+        // 연도 필터 토글 함수
+        function filterByYear(year) {
+            if (currentFilters.year === year) {
+                currentFilters.year = null;
+            } else {
+                currentFilters.year = year;
+            }
+            updateFilterButtonClass('button-container3', year.toUpperCase());
+            applyFiltersAndSorting();
+        }
+
+        // A-Z 정렬 토글 함수
+        function sortByAZ() {
+            if (currentSort.type === 'AZ') {
+                currentSort.type = null;
+            } else {
+                currentSort.type = 'AZ';
+            }
+            updateSortButtonClass('A-Z');
+            applyFiltersAndSorting();
+        }
+
+        // OLDEST 정렬 토글 함수
+        function sortByOldest() {
+            if (currentSort.type === 'oldest') {
+                currentSort.type = null;
+            } else {
+                currentSort.type = 'oldest';
+            }
+            updateSortButtonClass('OLDEST');
+            applyFiltersAndSorting();
+        }
+
+        // LATEST 정렬 토글 함수
+        function sortByNewest() {
+            if (currentSort.type === 'newest') {
+                currentSort.type = null;
+            } else {
+                currentSort.type = 'newest';
+            }
+            updateSortButtonClass('LATEST');
+            applyFiltersAndSorting();
+        }
+
+        // 필터 버튼 클래스 업데이트 함수
+        function updateFilterButtonClass(buttonGroup, value) {
+            document.querySelectorAll(`.${buttonGroup} .filter-button`).forEach(btn => {
+                if (btn.textContent.trim() === value) {
+                    btn.classList.toggle('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+        }
+
+        // 정렬 버튼 클래스 업데이트 함수
+        function updateSortButtonClass(value) {
+            document.querySelectorAll('.button-container1 .filter-button').forEach(btn => {
+                if (btn.textContent.trim() === value) {
+                    btn.classList.toggle('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+        }
+        function toggleInfo(element) {
+    const infoDiv = document.getElementById('info');
+    const isActive = element.getAttribute('data-active') === 'true';
+
+    if (!isActive) {
+        // Show the info div and persist the clicked color
+        infoDiv.style.display = 'block';
+        element.setAttribute('data-active', 'true');
+    } else {
+        // Hide the info div and reset the clicked state
+        infoDiv.style.display = 'none';
+        element.setAttribute('data-active', 'false');
+    }
+}
+    </script>
+    
+</body>
+</html>

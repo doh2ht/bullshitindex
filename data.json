@@ -1,0 +1,954 @@
+[
+    {
+        "title": "MOOD RING",
+        "year": "1975",
+        "image": "moodring.png",
+        "category": ["MARKETING","MISBELIEF"],
+        "description": "Mood ring contains a thermochromic element that changes colors based on the temperature of the finger of the wearer. The color changes in mood rings are caused by body temperature fluctuations, rather than any accurate reflection of mood. ",
+        "source":"https://bestmoodrings.com/pages/how-mood-rings-work"
+    },
+    {
+        "title": "FAN DEATH",
+        "year": "2000",
+        "image": "fandeath.png",
+        "category": ["MYTH","MISBELIEF","URBANLEGEND"],
+        "description": "Fan death is a misconception that people have died as a result of running an electric fan in a closed room with no open windows. This belief persisted mainly in South Korea and Japan, despite being scientifically debunked.",
+         "source":"https://www.reuters.com/article/world/electric-fans-and-south-koreans-a-deadly-mix-idUSSEO210261/"
+    },
+    {
+        "title": "FIVE SECOND RULE",
+        "year": "1995",
+        "image": "3second.png",
+        "category": ["SUPERSTITION","URBANLEGEND","MISBELIEF"],
+        "description": "The five-second rule, or the three-second rule, is a food hygiene urban legend that states a defined time window after which it is not safe to eat food that has been dropped on the floor.",
+         "source":"https://www.webmd.com/a-to-z-guides/features/5-second-rule-rules-sometimes-#1"
+    },
+    {
+        "title": "EYE POPPING SNEEZE",
+        "year": "1882",
+        "image": "sneezeeye.jpg",
+        "category": ["MYTH","MISBELIEF"],
+        "description": "The myth that sneezing with your eyes open can cause them to pop out dates back to the late 19th century, notably from an 1882 New York Times article about a woman's eyeball bursting during a sneeze. This story is now considered an urban legend.",
+         "source":"https://www.nbcnews.com/healthmain/eye-popping-truth-about-why-we-close-our-eyes-when-1c9321739"
+    },
+    {
+        "title": "HYSTERIA",
+        "year": "1900s",
+        "image": "hysteria.webp",
+        "category": ["MYTH","PROPAGANDA"],
+        "description": "Hysteria was a psychological and physical disorder predominantly diagnosed in women during the 19th and early 20th centuries, rooted in a sexist social structure and medical misunderstandings."
+        , "source":"https://pmc.ncbi.nlm.nih.gov/articles/PMC3480686/"
+    },
+
+    {
+        "title": "Microwave Radiation",
+        "year": "1968",
+        "image": "microwave.webp",
+        "category": ["PHOBIA","MISBELIEF","PSEUDOSCIENCE"],
+        "description": "Fear of microwave radiation suggests harm from standing nearby. However, microwaves are non-ionizing and cannot damage DNA, making such injuries extremely rare."
+        , "source":"https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-ovens#Avoiding_Injuries"
+    },
+
+    {
+        "title": "Radiophobia",
+        "year": "1903",
+        "image": "radiophobia.jpeg",
+        "category": ["PHOBIA","MISBELIEF","PSEUDOSCIENCE"],
+        "description": "Radiophobia has existed for over a century, often fueled by new technologies like radio, microwaves, and power lines. Despite scientific evidence showing low-level radiation poses little risk, bad science and conspiracy theories continue to stoke fears."
+        , "source":"https://www.codastory.com/waronscience/radiation-fears-dangerous/"
+    },
+
+    {
+        "title": "Trypophobia",
+        "year": "2005",
+        "image": "trypophobia.gif",
+        "category": ["PHOBIA","MISBELIEF","PSEUDOSCIENCE"],
+        "description": "Trypophobia is an aversion to the sight of repetitive patterns or clusters of small holes or bumps coined in 2005 on an online forum. The DSM-5-TR does not recognize trypophobia as a condition and is poorly understood by the scientific community."
+        , "source":"https://web.archive.org/web/20090316071914/http://www.geocities.com/holephobia/trypophobia.html"
+    },
+
+    {
+        "title": "blood type personality",
+        "year": "1927",
+        "image": "bloodtype.jpg",
+        "category": ["PSEUDOSCIENCE","MISBELIEF","MARKETING"],
+        "description": "The blood type personality theory suggests that blood type predicts personality traits. In 1927, Japanese psychologist Takeji Furukawa proposed this idea, and it has remained popular in Japan and Korea since then."
+        , "source":"https://en.wikipedia.org/wiki/Blood_type_personality_theory"
+    },
+
+    {
+        "title": "Water knows the answer",
+        "year": "1999",
+        "image": "messagefromwater.jpeg",
+        "category": ["PSEUDOSCIENCE","SCAM","MARKETING"],
+        "description": "Masaru Emoto's book claims positive words can affect water crystals and health. Popular in Korea, it was even a school-recommended bestseller, but is largely dismissed as pseudoscience."
+        , "source":"https://theness.com/neurologicablog/the-pseudoscience-of-masaru-emoto/"
+    },
+
+    {
+        "title": "Marshmallows Earth 7.5x ",
+        "year": "2000s",
+        "image": "staypuff.png",
+        "category": ["MYTH","URBANLEGEND","MISBELIEF"],
+        "description": "The urban lengend that marshmallows are so gooey that you could walk 7.5 times around the world and not burn a calorie is an exaggeration of Glyco's caramel slogan, '300m in 1.' The '7.5 times' reference comes from light's ability to circle Earth that many times per second."
+        , "source":"https://www.nutritionix.com/food/marshmallows/1-regular"
+    },
+
+    {
+        "title": "Germanium bracelet",
+        "year": "1970s",
+        "image": "germaniumbracelet.png",
+        "category": ["PSEUDOSCIENCE","MARKETING","MISBELIEF"],
+        "description": "Germanium bracelets claim to boost energy, reduce fatigue, and improve circulation by blocking electromagnetic waves. Most effects are likely placebo, and wearing germanium on the skin does not provide direct health benefits."
+        , "source":"https://www.mdpi.com/1660-4601/18/21/11170m"
+    },
+
+    {
+        "title": "emf protection sticker",
+        "year": "1990s",
+        "image": "emf.png",
+        "category": ["PSEUDOSCIENCE","MARKETING","MISBELIEF"],
+        "description": "EMF Blocking Sticker is marketed as a product that protects the body from electromagnetic fields emitted by electronic devices. EMF blocking requires robust materials like metals, making a small sticker unlikely to be effective."
+        , "source":"https://www.fcc.gov/general/radio-frequency-safety-0"
+    },
+
+    {
+        "title": "collagen supplement",
+        "year": "1996",
+        "image": "colla.jpg",
+        "category": ["PSEUDOSCIENCE","MARKETING","MISBELIEF"],
+        "description": "Collagen supports skin elasticity, moisture, and joint health. While many believe consuming collagen improves skin and joint health, evidence for its effectiveness in enhancing overall health, hair, or skin is limited."
+        , "source":"https://www.insidehook.com/wellness/collagen-supplements-hoax"
+    },
+
+    {
+        "title": "anion",
+        "year": "1980s",
+        "image": "anion.png",
+        "category": ["PSEUDOSCIENCE","MARKETING","MISBELIEF"],
+        "description": "Anion gained attention during Japan's 1980s pseudoscience boom, with claims of health benefits later criticized as fraud rooted in Shinto, Buddhist occultism, and faith healing trends."
+        , "source":"https://jnrbm.biomedcentral.com/articles/10.1186/1477-5751-12-14"
+    },
+
+    {
+        "title": "Catching the bouquet",
+        "year": "1950s",
+        "image": "wedding.png",
+        "category": ["SUPERSTITION","MISBELIEF","MYTH"],
+        "description": "The superstition that if the recipient of the bouquet does not marry within six months, they will never marry again was transformed in Korea, linking Western traditions with marriage pressure."
+        , "source":"https://www.brides.com/bouquet-toss-5077200"
+    },
+
+    {
+        "title": "No Names in Red",
+        "year": "1400s",
+        "image": "redname.png",
+        "category": ["SUPERSTITION","MYTH"],
+        "description": "Writing a name in red pen brings death originates from Korean traditions, it is considered very unlucky and is associated with death, as red is traditionally used to write the names of the deceased names or ward off spirits."
+        , "source":"https://gwangjunewsgic.com/arts-culture/korean-myths/behind-the-myth-the-red-pen/"
+    },
+
+    {
+        "title": "Acid Rain Hair Loss",
+        "year": "1980s",
+        "image": "acid.gif",
+        "category": ["SUPERSTITION","MYTH","MISBELIEF"],
+        "description": "Acid rain-induced hair loss likely originated in the 1980s during heightened concerns about environmental pollution. While fears of acid rain were exaggerated, there is no scientific evidence to support this claim."
+        , "source":"https://gwangjunewsgic.com/arts-culture/korean-myths/behind-the-myth-the-red-pen/"
+    },
+
+    {
+        "title": "Anaki",
+        "year": "2013",
+        "image": "anaki.webp",
+        "category": ["PSEUDOSCIENCE","MISBELIEF"],
+        "description": "Anaki (raising children without medicine) is a South Korean parenting community advocating for natural child-rearing, minimizing medicine use, including vaccines, and promoting natural healing."
+        , "source":"https://www.koreabiomed.com/news/articleView.html?idxno=2232"
+    },
+
+    {
+        "title": "Biorhythm",
+        "year": "1897",
+        "image": "bio.png",
+        "category": ["PSEUDOSCIENCE","MARKETING"],
+        "description": "Biorhythm is a theory claiming human cycles in physical, emotional, and intellectual states follow rhythms based on birth date, though it lacks scientific backing and is seen as pseudoscience."
+        , "source":"https://pubmed.ncbi.nlm.nih.gov/9775660/"
+    },
+
+    {
+        "title": "MC Square",
+        "year": "1991",
+        "image": "mcsquare.jpg",
+        "category": ["PSEUDOSCIENCE","MARKETING"],
+        "description": "MC Square is a 1990s South Korean device that claims to enhance concentration and learning by synchronizing brainwaves through sound frequencies delivered via a headset."
+        , "source":"https://typeset.io/pdf/a-test-of-the-efficacy-of-the-mc-square-device-for-improving-59pdtdfdnj.pdf"
+    },
+
+    {
+        "title": "Hexagonal water",
+        "year": "1960",
+        "image": "hexagonalwater.jpg",
+        "category": ["PSEUDOSCIENCE","MARKETING","MISBELIEF"],
+        "description": "Hexagonal water, theorized in the 1960s and popularized in the 1980s, claims water molecules form a hexagonal structure with health benefits. However, it lacks scientific evidence and is based on misconceptions."
+        , "source":"https://healthnews.com/longevity/biohacking/structured-water-legit-science-or-a-hoax/"
+    },
+
+    {
+        "title": "Magnet therapy",
+        "year": "1800s",
+        "image": "magnet.jpg",
+        "category": ["PSEUDOSCIENCE","MARKETING","MISBELIEF"],
+        "description": "Magnet therapy uses static magnetic fields to promote healing and relieve pain. While claimed to enhance circulation and reduce inflammation, it lacks scientific evidence and is often regarded as pseudoscience."
+        , "source":"https://www.webmd.com/pain-management/magnetic-field-therapy-overview"
+    },
+
+    {
+        "title": "Climate Denialism",
+        "year": "1970s",
+        "image": "climate.webp",
+        "category": ["CONSPIRACY","DENIALISM"],
+        "description": "Global warming denial is the rejection of scientific consensus that human activity is causing climate change. Deniers often claim climate change is a natural occurrence or not happening, despite strong scientific evidence to the contrary."
+        , "source":"https://science.nasa.gov/climate-change/what-is-climate-change/"
+    },
+
+    {
+        "title": "Flat Earth Theory",
+        "year": "BC 300",
+        "image": "flatmyth.jpg",
+        "category": ["CONSPIRACY","MISBELIEF"],
+        "description": "Flat Earth Theory claims that the Earth is flat rather than spherical, a belief that was prevalent in ancient times. Early Greek philosophers like Pythagoras and Eratosthenes provided mathematical proof of the Earth’s roundness."
+        , "source":"https://phys.org/news/2016-01-flat-wrong-misunderstood-history-earth.html"
+    },
+
+    {
+        "title": "Flat Earth Society",
+        "year": "2016",
+        "image": "flat.jpg",
+        "category": ["CONSPIRACY","DENIALISM"],
+        "description": "Flat Earth Theory gained new followers through the internet and social media. The revival was driven by the Flat Earth Society and online communities that reintroduced the debunked theory."
+        , "source":"https://www.space.com/how-to-debate-flat-earther.html"
+    },
+
+    {
+        "title": "Iron rich spinach",
+        "year": "1930s",
+        "image": "popeye.jpg",
+        "category": ["MYTH","MISBELIEF"],
+        "description": "The belief that spinach is rich in iron began with a 1930s mistake by a German scientist, which was reinforced by the Popeye cartoon, further spreading the misconception."
+        , "source":"https://www.virdex.it/en/2023/02/22/braccio-di-ferro-ma-quanto-ferro/"
+    },
+
+    {
+        "title": "Good and Bad Words Onion",
+        "year": "1990s",
+        "image": "onion.jpg",
+        "category": ["PSEUDOSCIENCE","MISBELIEF"],
+        "description": "Good Words and Bad Words Onion experiment exposed onions to positive and negative words in South Korean elementary schools. But plants don't recognize language and growth is influenced by environmental factors."
+        , "source":"https://sciencelove.com/2046"
+    },
+
+    {
+        "title": "taste map",
+        "year": "1901",
+        "image": "taste.jpg",
+        "category": ["PSEUDOSCIENCE","MYTH","MISBELIEF"],
+        "description": "The taste map suggested that different parts of the tongue are responsible for recognizing specific tastes (sweet, salty, sour, and bitter), but modern research shows that all parts of the tongue can detect these tastes."
+        , "source":"https://www.smithsonianmag.com/science-nature/neat-and-tidy-map-tastes-tongue-you-learned-school-all-wrong-180963407/"
+    },
+
+    {
+        "title": "10% of the Brain",
+        "year": "1900s",
+        "image": "brain.jpg",
+        "category": ["PSEUDOSCIENCE","MYTH","MISBELIEF"],
+        "description": "The myth that humans only use 10% of their brains originated in the early 20th century. Modern neuroscience reveals that nearly all parts of the brain have identifiable functions and are active."
+        , "source":"https://mcgovern.mit.edu/2024/01/26/do-we-use-only-10-percent-of-our-brain/"
+    },
+
+
+    {
+        "title": "toxis reboiled water",
+        "year": "1990s",
+        "image": "reboil.webp",
+        "category": ["SUPERSTITION","MISBELIEF"],
+        "description": "The belief that reboiling water makes it toxic spread in the late 1990s, particularly in China, linked to the culture of boiling water at home. It claims harmful substances, but this has not been scientifically proven."
+        , "source":"https://sciencenotes.org/is-it-safe-to-reboil-water/"
+    },
+
+    {
+        "title": "2012 doomsday",
+        "year": "1995",
+        "image": "doomsday.webp",
+        "category": ["MYTH","MISBELIEF","PROPAGANDA"],
+        "description": "The 2012 doomsday is a myth based on the end date of the Mayan calendar, December 21, 2012, predicting the destruction of Earth or a major disaster. Scientists classified this theory as baseless, confirming that Earth remains safe."
+        , "source":"https://www.sixthtone.com/news/1000919"
+    },
+
+    {
+        "title": "Indoor umbrella",
+        "year": "BC 2000",
+        "image": "umbreall.png",
+        "category": ["SUPERSTITION","MYTH"],
+        "description": "The belief that opening an umbrella indoors brings bad luck originated in ancient Egypt. It was considered disrespectful to the sun god Ra to open an umbrella indoors, as it was seen as blocking sunlight, which could invite misfortune."
+        , "source":"https://etspeaksfromhome.co.uk/2023/05/chinese-superstition-umbrella-taboo.html"
+    },
+
+    {
+        "title": "Haircut in the First Month",
+        "year": "1644",
+        "image": "hair.jpg",
+        "category": ["SUPERSTITION","MYTH"],
+        "description": "The Chinese superstition that cutting hair in the first lunar month causes the death of one's maternal uncle originates from the Qing Dynasty's 1644 haircutting edict."
+        , "source":"https://www.bu.edu/articles/2020/lunar-new-year-dos-and-donts/"
+    },
+
+    {
+        "title": "phone radiation",
+        "year": "1990s",
+        "image": "phone.jpg",
+        "category": ["PSEUDOSCIENCE","MISBELIEF","PHOBIA"],
+        "description": "Sleeping near your phone or leaving Wi-Fi on is often believed to be harmful, but there is no scientific evidence linking phone radiation to health risks like brain cancer."
+        , "source":"https://www.reuters.com/business/healthcare-pharmaceuticals/no-link-between-mobile-phones-brain-cancer-who-led-study-says-2024-09-03/"
+    },
+
+    {
+        "title": "Birds Aren't Real",
+        "year": "2017",
+        "image": "birds.jpg",
+        "category": ["CONSPIRACY","SATIRE","HOAX"],
+        "description": "Birds Aren't Real is a satirical theory claiming birds are surveillance drones. It began in January 2017, asserting that the U.S. government replaced all birds with drones between 1959 and 1971."
+        , "source":"https://birdsarentreal.com/pages/about"
+    },
+
+    {
+        "title": "eye twitching",
+        "year": "BC unknown",
+        "image": "eyetwitch.jpg",
+        "category": ["SUPERSTITION","MYTH"],
+        "description": "In Chinese culture, eye twitching is associated with different meanings depending on which eye twitches. A twitching left eye is commonly believed to signify good fortune, while a twitching right eye is thought to indicate misfortune."
+        , "source":"https://www.scmp.com/news/people-culture/article/3266804/why-chinese-superstition-can-predict-future-fortunes-twitching-eye"
+    },
+
+    {
+        "title": "corona beer and covid",
+        "year": "2020",
+        "image": "corona.png",
+        "category": ["CONSPIRACY","PROPAGANDA","MISBELIEF"],
+        "description": "During the early COVID-19 pandemic, some believed Corona beer was linked to the coronavirus due to the name similarity. The beer company clarified that there was no connection between the virus and their product"
+        , "source":"https://www.businessinsider.com/corona-beer-virus-wuhan-no-link-trusts-customers-2020-1"
+    },
+
+    {
+        "title": "5G misinformation",
+        "year": "2020",
+        "image": "5g.jpg",
+        "category": ["CONSPIRACY","PROPAGANDA","MISBELIEF"],
+        "description": "The belief that COVID-19 is linked to 5G is a debunked conspiracy theory. WHO have confirmed that viruses are not transmitted through radio waves or mobile networks."
+        , "source":"https://www.livescience.com/5g-coronavirus-conspiracy-theory-debunked.html"
+    },
+
+    {
+        "title": "Moon Landing Hoax",
+        "year": "1974",
+        "image": "moon.jpg",
+        "category": ["CONSPIRACY","HOAX","DENIALISM"],
+        "description": "The Moon Landing Hoax theory gained attention in 1974 after Bill Kaysing's book We Never Went to the Moon claimed the Apollo landings were faked, citing inconsistencies in footage and photos."
+        , "source":"https://allthatsinteresting.com/moon-landing-fake"
+    },
+
+    {
+        "title": "chemtrail",
+        "year": "1996",
+        "image": "chemtrails.jpg",
+        "category": ["CONSPIRACY","HOAX"],
+        "description": "The Chemtrail theory claims that airplane contrails are chemicals sprayed for purposes like population control or weather manipulation. However, experts confirm they are just water vapor, not chemicals."
+        , "source":"https://www.universityofcalifornia.edu/news/surveyed-scientists-debunk-chemtrails-conspiracy-theory"
+    },
+
+    {
+        "title": "Eugenics",
+        "year": "1883",
+        "image": "Eugenics.jpg",
+        "category": ["CONSPIRACY","PROPAGANDA","HOAX"],
+        "description": "Eugenics is a movement aimed at improving human genetics by controlling reproduction based on traits like mental disabilities, race, and social class. It led to discriminatory practices, particularly in Nazi Germany."
+        , "source":"https://www.nature.com/scitable/topicpage/human-testing-the-eugenics-movement-and-irbs-724/"
+    },
+
+    {
+        "title": "Magic 8 Ball",
+        "year": "1950",
+        "image": "magicball.png",
+        "category": ["MARKETING","MISBELIEF"],
+        "description": "Magic 8 Ball is a fortune-telling toy where shaking the ball reveals a random answer. It appears mystical but works on a simple mechanical principle that randomizes responses."
+        , "source":"https://www.youtube.com/watch?app=desktop&v=0-FYc-eEDa0&t=145"
+    },
+
+    {
+        "title": "Witch hunt",
+        "year": "1100",
+        "image": "witchhunt.webp",
+        "category": ["CONSPIRACY","PROPAGANDA","HOAX"],
+        "description": "Witch hunt is large-scale persecutions by the Christian church in Europe, starting around the 12th century. People accused of witchcraft were hunted, and evidence of their magic was sought, fading by the 18th century."
+        , "source":"https://www.youtube.com/watch?v=r9TzC0EGyr4"
+    },
+
+    {
+        "title": "Ouija board",
+        "year": "1890",
+        "image": "Ouija.jpg",
+        "category": ["PSEUDOSCIENCE","MYTH"],
+        "description": "Ouija Board is used to communicate with spirits with letters, numbers, and yes or no options. Users believe the pointer moves to spell answers, but it's explained by unconscious hand movements, not supernatural forces."
+        , "source":"https://www.smithsonianmag.com/history/the-ouija-board-cant-connect-us-to-paranormal-forces-but-it-can-tell-us-a-lot-about-psychology-grief-and-uncertainty-5860627/"
+    },
+
+    {
+        "title": "impacted stool",
+        "year": "1910",
+        "image": "suk.jpg",
+        "category": ["PSEUDOSCIENCE","MARKETING","MISBELIEF"],
+        "description": "The concept of impacted stool refers to feces staying in the colon for a long time, but modern medicine said digestive system naturally eliminates waste. It was introduced during the Japanese colonial period and brought to Korea."
+        , "source":"https://en.namu.wiki/w/%EC%88%99%EB%B3%80"
+    },
+
+    {
+        "title": "The Secret",
+        "year": "2006",
+        "image": "secret.jpg",
+        "category": ["PSEUDOSCIENCE","MARKETING"],
+        "description": "The Secret by Rhonda Byrne promotes the Law of Attraction, suggesting that positive thinking can bring positive outcomes. But it's considered pseudoscience, lacking scientific evidence and based on assumptions."
+        , "source":"https://www.nytimes.com/2010/09/26/books/review/Chabris-t.html"
+    },
+
+    {
+        "title": "Harmful MSG",
+        "year": "1968",
+        "image": "msg.jpg",
+        "category": ["PSEUDOSCIENCE","MISBELIEF"],
+        "description": "The claim that MSG is harmful began in 1968 linked it to symptoms like headaches in a letter to the New England Journal of Medicine. However, FDA recognizes MSG as safe for consumption."
+        , "source":"https://www.health.harvard.edu/nutrition/monosodium-glutamate-msg-what-it-is-and-why-you-might-consider-avoiding-foods-that-contain-it"
+    },
+
+    {
+        "title": "The Miracle Vegetable Soup",
+        "year": "1993",
+        "image": "soup.jpeg",
+        "category": ["PSEUDOSCIENCE","MARKETING","HOAX"],
+        "description": "The Miracle Vegetable Soup is a Japanese alternative food therapy claimed to prevent cancer and boost immunity. But there is no research evidence to prove that itis effective in preventing or treating cancer."
+        , "source":"https://www.health.harvard.edu/nutrition/monosodium-glutamate-msg-what-it-is-and-why-you-might-consider-avoiding-foods-that-contain-it"
+    },
+
+    {
+        "title": "Bi-Digital O-Ring Test",
+        "year": "1977",
+        "image": "oring.png",
+        "category": ["PSEUDOSCIENCE","SCAM"],
+        "description": "The Bi-Digital O-Ring Test (BDORT) involves the patient forming an 'O' shape with their thumb and finger, while the examiner applies force to test health. It is considered pseudoscience due to lack of evidence."
+        , "source":"https://www.mpdt.org.nz/decisionsorders/precis/0289d.html"
+    },
+
+    {
+        "title": "Coke for Indigestion",
+        "year": "1800s",
+        "image": "coke.jpg",
+        "category": ["PSEUDOSCIENCE","MYTH","MISBELIEF"],
+        "description": "The belief that coke relieve indigestion started in the 19th century with carbonated water as a medicinal tonic. However, it is now known that they are ineffective and can worsen symptoms for some."
+        , "source":"https://www.grunge.com/248371/the-medicinal-history-of-sodas-explained/"
+    },
+
+    {
+        "title": "Hand pricking",
+        "year": "BC 200",
+        "image": "needle.webp",
+        "category": ["PSEUDOSCIENCE","MISBELIEF"],
+        "description": "Hand pricking for indigestion is an East Asian folk remedy involving fingertip pricking to relieve symptoms. Modern medicine does not recommend it due to infection risks and lack of evidence."
+        , "source":"https://www.grunge.com/248371/the-medicinal-history-of-sodas-explained/"
+    },
+
+    {
+        "title": "Bungeoppang Test",
+        "year": "2000s",
+        "image": "bung.jpeg",
+        "category": ["URBANLEGEND","MISBELIEF"],
+        "description": "Bungeoppang Personality Test determines traits based on which part of the pastry you eat first. It gained popularity in the 2000s with internet culture, driven more by humor and curiosity than scientific evidence."
+        , "source":"https://en.namu.wiki/w/%EB%B6%95%EC%96%B4%EB%B9%B5"
+    },
+
+    {
+        "title": "vaccine contain microchip",
+        "year": "2020",
+        "image": "micro.webp",
+        "category": ["CONSPIRACY","PROPAGANDA","HOAX"],
+        "description": "The conspiracy theory that vaccines contain microchips began during the initial phase of the COVID-19. Figures like Bill Gates were mentioned to fuel fear and distrust, but this claim is false and lacks any scientific basis."
+        , "source":"https://www.theverge.com/22516823/covid-vaccine-microchip-conspiracy-theory-explained-reddit"
+    },
+
+    {
+        "title": "COVID Disinfectant",
+        "year": "2020",
+        "image": "drinking.webp",
+        "category": ["MISBELIEF","HOAX"],
+        "description": "The claim that ingesting disinfectants prevents COVID-19 emerged in early 2020 after Trump's comments. Some tried it, causing a spike in poison control cases. Experts say ingesting disinfectants is dangerous and baseless."
+        , "source":"https://www.cbsnews.com/newyork/news/coronavirus-disinfectant-treatment/"
+    },
+
+    {
+        "title": "vaccines make you magnetic",
+        "year": "2021",
+        "image": "mage.webp",
+        "category": ["CONSPIRACY","MISBELIEF"],
+        "description": "The theory that vaccines make your body magnetic spread via social media videos of people sticking magnets to their arms. These effects were due to sweat or skin oils, not vaccine-induced magnetism."
+        , "source":"https://arstechnica.com/science/2022/10/doc-who-thinks-vaccinated-people-are-magnetic-is-in-big-trouble-with-med-board/"
+    },
+
+    {
+        "title": "Pigeons as Wartime Food",
+        "year": "1998",
+        "image": "pigeon.webp",
+        "category": ["SATIRE","URBANLEGEND","HOAX"],
+        "description": "The theory that pigeons are managed by the government as emergency wartime food spread in Korean online communities, humorously explaining their decline. It has no scientific basis and is simply an internet meme."
+        , "source":"https://arca.live/b/conspiracy/65959908?p=1"
+    },
+
+    {
+        "title": "Elvis Presley Is Still Alive",
+        "year": "1977",
+        "image": "elvis.webp",
+        "category": ["CONSPIRACY","HOAX"],
+        "description": "After Elvis Presley's death in 1977, some fans couldn't accept it, sparking rumors he faked his death. The conspiracy gained popularity throughout the 1980s, with people claiming to have seen Elvis alive."
+        , "source":"https://allthatsinteresting.com/how-did-elvis-presley-die"
+    },
+
+    {
+        "title": "Ye clone",
+        "year": "2016",
+        "image": "ye.webp",
+        "category": ["CONSPIRACY","HOAX"],
+        "description": "The conspiracy theory claims Kanye West was replaced by a clone around 2016, due to changes in his appearance, behavior, and political views. These theories spread via social media, but lack any scientific basis."
+        , "source":"https://www.telegraph.co.uk/music/artists/kanye-west-clone-celebrity-doubles-internet-jamie-foxx/"
+    },
+
+    {
+        "title": "McDonald's human meat",
+        "year": "2014",
+        "image": "mc.jpg",
+        "category": ["CONSPIRACY","HOAX","PROPAGANDA"],
+        "description": "The claim that McDonald's uses human meat first appeared in 2014, originating from a satirical website. It quickly spread via social media, but was debunked as false by McDonald's and fact-checkers like Snopes."
+        , "source":"https://www.snopes.com/fact-check/swap-meat/"
+    },
+
+    {
+        "title": "Pink slime nuggets",
+        "year": "2003",
+        "image": "pink.jpg",
+        "category": ["CONSPIRACY","HOAX","PROPAGANDA"],
+        "description": "People believed McDonald's Chicken McNuggets contained pink slime, a processed meat product. McDonald's denied this, stating their nuggets are made from white, boneless chicken."
+        , "source":"https://www.mcdonalds.com/us/en-us/faq/do-you-use-so-called--pink-slime--or--pink-goop--in-your-chicken-mcnuggets.htm.html"
+    },
+
+    {
+        "title": "McDonald's brainwashing",
+        "year": "1991",
+        "image": "meat.webp",
+        "category": ["CONSPIRACY","HOAX","PROPAGANDA"],
+        "description": "The conspiracy emerged claiming McDonald's used secret ingredients, like cow eyeballs or worm meat, to brainwash or addict consumers. These claims were debunked as urban myths."
+        , "source":"https://www.snopes.com/fact-check/the-eyes-of-texas/"
+    },
+
+    {
+        "title": "paul is dead",
+        "year": "1969",
+        "image": "paul.jpeg",
+        "category": ["CONSPIRACY","HOAX"],
+        "description": "The Paul is Dead conspiracy theory claimed Paul McCartney died in a 1966 car crash and was replaced by a look-alike. The theory was promoted by radio broadcasts and supposed clues in Beatles' songs and album covers."
+        , "source":"https://www.bbc.com/videos/cd18j711w04o"
+    },
+
+    {
+        "title": "JFK Jr. survival",
+        "year": "2018",
+        "image": "jfk.jpg",
+        "category": ["CONSPIRACY","HOAX","PROPAGANDA"],
+        "description": "The JFK Jr. survival conspiracy claims he survived his 1999 plane crash and is still alive. It gained traction in 2018, merging with QAnon, with followers believing he secretly aids Donald Trump and will reveal himself publicly."
+        , "source":"https://www.independent.co.uk/news/world/americas/us-politics/qanon-jfk-jr-alive-trump-b1995594.html"
+    },
+
+    {
+        "title": "Roswell alien cover-up",
+        "year": "1978",
+        "image": "alien.jpg",
+        "category": ["CONSPIRACY","HOAX","PROPAGANDA"],
+        "description": "The Roswell alien cover-up theory claims the 1947 Roswell crash involved an alien spacecraft, with the U.S. government covering it up. The theory gained traction in 1978 when Jesse Marcel stated the debris was from an alien craft."
+        , "source":"https://www.history.com/news/roswell-ufo-aliens-what-happened"
+    },
+
+    {
+        "title": "Gwangju Uprising Denial",
+        "year": "1985",
+        "image": "gwangju.jpg",
+        "category": ["DENIALISM","HOAX","PROPAGANDA"],
+        "description": "The May 18 Gwangju Uprising was a 1980 pro-democracy movement in South Korea, falsely labeled as an armed rebellion by far-right groups. These claims are false, it was a legitimate resistance against military rule."
+        , "source":"https://www.518archives.go.kr/eng/"
+    },
+
+    {
+        "title": "Sewol Ferry Disaster Hoax",
+        "year": "2014",
+        "image": "sewol.webp",
+        "category": ["DENIALISM","HOAX","PROPAGANDA"],
+        "description": "The Sewol ferry disaster was a tragic incident in 2014, yet some conspiracy theorists claim it was staged, suggesting victims and families were actors. These false theories are irresponsible and deeply hurtful to those affected."
+        , "source":"https://thediplomat.com/2024/04/how-the-sewol-sinking-changed-south-korea/"
+    },
+
+    {
+        "title": "Time machine",
+        "year": "1972",
+        "image": "timemachine.jpeg",
+        "category": ["CONSPIRACY","HOAX"],
+        "description": "The 1972 time machine conspiracy claims a device called the Chronovisor was developed to view past events, allegedly by secret groups. This theory has been widely debunked and is considered pseudoscientific."
+        , "source":"https://allthatsinteresting.com/chronovisor"
+    },
+
+    {
+        "title": "Deadly Radiation of Bananas",
+        "year": "2007",
+        "image": "banana.png",
+        "category": ["MISBELIEF","HOAX"],
+        "description": "The banana radiation myth claims eating bananas exposes people to harmful radiation due to potassium-40. Experts debunk this, clarifying that the radiation level is extremely low and harmless."
+        , "source":"https://www.mcgill.ca/oss/article/you-asked/it-true-banana-radioactive"
+    },
+
+    {
+        "title": "Denial of Comfort Women",
+        "year": "1991",
+        "image": "comfort.jpg",
+        "category": ["DENIALISM","CONSPIRACY","PROPAGANDA"],
+        "description": "Some Japanese politicians denied comfort women were forcibly recruited, claiming it was voluntary. In 2007, Prime Minister Abe stated there was no evidence of coercion, contradicting survivor testimonies"
+        , "source":"https://www.telegraph.co.uk/news/worldnews/1544471/Japanese-PM-denies-wartime-comfort-women-were-forced.html"
+    },
+
+    
+    {
+        "title": "Matrix Reality",
+        "year": "1999",
+        "image": "matrix.png",
+        "category": ["CONSPIRACY","HOAX","HOAX"],
+        "description": "The Matrix Reality Theory suggests that our world is a computer-generated simulation. It gained popularity in 1999 with the release of The Matrix film and was further supported by Nick Bostrom's 2003 Simulation Hypothesis."
+        , "source":"https://bigthink.com/thinking/why-the-simulation-hypothesis-is-pseudoscience/"
+    },
+
+    {
+        "title": "Obama a Muslim",
+        "year": "2004",
+        "image": "obama.webp",
+        "category": ["CONSPIRACY","HOAX","PROPAGANDA"],
+        "description": "The Obama Muslim conspiracy started in 2004, claiming Obama was secretly a Muslim due to his father's background and his middle name, Hussein. It gained traction during the 2008 campaign, fueled by Islamophobia."
+        , "source":"https://www.snopes.com/fact-check/my-muslim-faith/"
+    },
+
+    {
+        "title": "9/11 inside job",
+        "year": "2001",
+        "image": "danger.webp",
+        "category": ["CONSPIRACY","DENIALISM","PROPAGANDA"],
+        "description": "The 9/11 inside job theory claims U.S. government involvement, but it has been debunked by experts, including NIST and Popular Mechanics, confirming the attacks were by terrorists."
+        , "source":"https://www.history.co.uk/article/the-biggest-911-conspiracy-theories-debunked"
+    },
+
+    {
+        "title": "Shakespeare Didn't Exist",
+        "year": "1700s",
+        "image": "shake.jpg",
+        "category": ["DENIALISM","HOAX"],
+        "description": "The Shakespeare Didn't Exist theory claims Shakespeare wasn't the real author, suggesting others like Edward de Vere. However, scholars argue that historical evidence clearly supports Shakespeare's authorship."
+        , "source":"https://phys.org/news/2023-08-historians-literary-scholars-tackle-shakespeare.html"
+    },
+
+    {
+        "title": "AIDS and CIA",
+        "year": "1983",
+        "image": "aids.jpg",
+        "category": ["CONSPIRACY","DENIALISM","PROPAGANDA"],
+        "description": "The claim that AIDS was created by the CIA suggests HIV/AIDS was intentionally made to target certain populations. This theory emerged in the 1980s through Soviet disinformation but is thoroughly discredited by science."
+        , "source":"https://www.snopes.com/fact-check/aids-created-by-cia/"
+    },
+
+    {
+        "title": "Wait 30 mins to swim",
+        "year": "1908",
+        "image": "swiming.jpeg",
+        "category": ["SUPERSTITION","MYTH","MISBELIEF"],
+        "description": "The belief that you must wait 30 minutes after eating to swim is a myth, originating from the 1908 Boy Scout Handbook. Experts like Dr. Michael Boniface say swimming after eating is safe and not linked to cramps."
+        , "source":"https://www.snopes.com/fact-check/swim-after-eating/"
+    },
+
+    {
+        "title": "itching palm gets you money",
+        "year": "1300s",
+        "image": "palm.png",
+        "category": ["SUPERSTITION","MYTH"],
+        "description": "The belief that an itching palm gets you money originated in medieval Europe, linked to Roman beliefs about bodily sensations and luck. It has been passed down and embraced as a sign of wealth or good fortune."
+        , "source":"https://people.howstuffworks.com/itchy-palms-superstition.htm"
+    },
+
+    {
+        "title": "itchy ear gossiping",
+        "year": "77",
+        "image": "gossip.jpg",
+        "category": ["SUPERSTITION","MYTH"],
+        "description": "The belief that an itchy ear means someone is talking about you is ancient and found in many cultures, with mentions possibly tracing back to Pliny the Elder's Roman-era writings on bodily sensations."
+        , "source":"https://folklore.usc.edu/when-your-ear-itches-someone-is-talking-about-you/"
+    },
+
+    {
+        "title": "Newborn Purity in Africa",
+        "year": "BC unknown",
+        "image": "baby.webp",
+        "category": ["SUPERSTITION","MYTH"],
+        "description": "In some African cultures, it's believed that a newborn's spiritual purity should be protected by avoiding outside contact for 3 months, as external energies could affect the baby's fragile spirit."
+        , "source":"https://omenkamag.com/african-baby-delivery/"
+    },
+
+    {
+        "title": "Lizard People",
+        "year": "1998",
+        "image": "lizard.jpg",
+        "category": ["CONSPIRACY","HOAX"],
+        "description": "The Lizard People theory claims that world leaders are shape-shifting reptilian aliens controlling humanity. Popularized by David Icke in 1998 through his book The Biggest Secret, it lacks evidence and is discredited."
+        , "source":"https://www.inverse.com/article/45526-lizard-people-theory-debunked-by"
+    },
+
+    {
+        "title": "Heavy Metal Killed Those Boys",
+        "year": "1990",
+        "image": "judas.jpg",
+        "category": ["HOAX","CONSPIRACY"],
+        "description": "Judas Priest was sued for allegedly including hidden messages like Do it in their song, inciting two suicides. The court found no evidence, and both the band and experts confirmed no intent to include subliminal messaging."
+        , "source":"https://www.youtube.com/watch?v=gHOFI5UNNck"
+    },
+
+    {
+        "title": "Electronic Voice Phenomena",
+        "year": "1959",
+        "image": "evp.jpg",
+        "category": ["PSEUDOSCIENCE","SUPERSTITION"],
+        "description": "Electronic Voice Phenomena (EVP) suggests that spirits communicate through electronic devices. It gained attention in the 1950s when Friedrich Jürgenson claimed to record mysterious voices."
+        , "source":"https://skepticalinquirer.org/2023/02/examining-sciencey-evp-research/"
+    },
+
+    {
+        "title": "Stab-in-the-back myth",
+        "year": "1918",
+        "image": "stab.gif",
+        "category": ["CONSPIRACY","HOAX","PROPAGANDA"],
+        "description": "The Stab-in-the-back myth claimed Germany lost World War I due to betrayal by Jews and leftists. This false theory was used by Nazis to fuel anti-Semitic propaganda, but there's no evidence supporting it."
+        , "source":"https://encyclopedia.1914-1918-online.net/article/stab-in-the-back-myth/"
+    },
+
+    {
+        "title": "Titanic-Olympic switch",
+        "year": "1998",
+        "image": "titanic.jpg",
+        "category": ["CONSPIRACY","HOAX"],
+        "description": "The Titanic-Olympic switch theory claims White Star Line swapped the ships for insurance fraud. This is false, as shipyard records and inspections confirm the ship was indeed the Titanic."
+        , "source":"https://www.youtube.com/watch?v=lktluZgEAvA"
+    },
+
+    {
+        "title": "Michael Jackson survival",
+        "year": "2009",
+        "image": "micheal.webp",
+        "category": ["CONSPIRACY","HOAX"],
+        "description": "The Michael Jackson survival conspiracy began after his death in June 2009. However, his doctor was found guilty of involuntary manslaughter, confirming Jackson's death as a result of a fatal dose of propofol."
+        , "source":"https://people.com/crime/conrad-murray-verdict-guilty-of-manslaughter-in-michael-jacksons-death/"
+    },
+
+    {
+        "title": "Fluoride Mind-Control",
+        "year": "1945",
+        "image": "fluoride.webp",
+        "category": ["CONSPIRACY","PROPAGANDA"],
+        "description": "The conspiracy theory that fluoride is added to control the public began in 1945 with Grand Rapids' water fluoridation. However, scientific evidence has shown fluoride's safety and dental benefits, disproving these claims."
+        , "source":"https://www.acsh.org/news/2023/05/30/fluoride-controversy-never-dies-17093"
+    },
+
+    {
+        "title": "Sheeple Magazine",
+        "year": "2005",
+        "image": "sheeple.png",
+        "category": "SATIRE",
+        "description": "Sheeple Magazine was created by David Dees in 2005 as a fictional publication on conspiracies, government control, and social issues. It blurred lines between fact and fiction, even fooling the Bullshit Index designer."
+        , "source":"https://rense.com/1.mpicons/sheepleA.htm"
+    },
+
+    {
+        "title": "Uri Geller",
+        "year": "1973",
+        "image": "uri.png",
+        "category": ["PSEUDOSCIENCE","SCAM"],
+        "description": "Uri Geller gained fame in 1973 for spoon bending, but in 1975, magician James Randi debunked his acts as mere magic tricks rather than genuine psychic abilities."
+        , "source":"https://www.youtube.com/watch?v=NnDHPOWXFVI&t=1s"
+    },
+
+    {
+        "title": "Simon Leviev",
+        "year": "2017",
+        "image": "simon.webp",
+        "category": ["SCAM"],
+        "description": "Simon Leviev scammed women on Tinder from 2017 by pretending to be a wealthy diamond heir, borrowing large sums under false pretenses. His scam was exposed in the 2022 Netflix documentary, The Tinder Swindler."
+        , "source":"https://people.com/crime/the-tinder-swindler-true-story"
+    },
+
+    {
+        "title": "Stem Cell Scandal",
+        "year": "2004",
+        "image": "woo.webp",
+        "category": ["SCAM"],
+        "description": "Hwang, Woo-suk gained international fame for claiming to have successfully cloned human embryonic stem cells in South Korea. However, his research was later exposed as fraudulent, leading to legal consequences."
+        , "source":"https://www.nbcnews.com/id/wbna8128448"
+    },
+
+    {
+        "title": "popping the cherry",
+        "year": "1500s",
+        "image": "pop.jpg",
+        "category": ["MYTH","MISBELIEF"],
+        "description": "Popping the cherry myth is a distortion of the belief that an intact hymen is proof of virginity. In reality, the hymen can stretch or tear from various non-sexual activities, making the myth scientifically inaccurate."
+        , "source":"https://my.clevelandclinic.org/health/body/22718-hymen"
+    },
+
+    {
+        "title": "martial law declaration",
+        "year": "2024",
+        "image": "yoon.jpg",
+        "category": "PROPAGANDA",
+        "description": "President Yoon Suk-yeol declared martial law, citing unrest and security threats, but critics claimed no real danger existed and opposition was unfairly labeled anti-state to justify intervention."
+        , "source":"https://www.cnn.com/world/live-news/martial-law-south-korea-intl/index.html"
+    },
+
+    {
+        "title": "human shields in gaza",
+        "year": "2002",
+        "image": "gaza.jpeg",
+        "category": ["CONSPIRACY","PROPAGANDA"],
+        "description": "The claim that Hamas uses civilians as human shields is a prominent justification for Israeli military actions in Gaza. Critics argue it often lacks evidence and is used to deflect accountability for civilian casualties."
+        , "source":"https://www.aljazeera.com/opinions/2018/6/18/the-fallacy-of-israels-human-shields-claims-in-gaza"
+    },
+
+    {
+        "title": "cutting eyelashes",
+        "year": "1800",
+        "image": "eyelash.png",
+        "category": ["MYTH","MISBELIEF"],
+        "description": "The belief that cutting eyelashes makes them grow thicker is a myth. Growth is determined by genetics, and trimming only makes them look shorter without affecting thickness or length."
+        , "source":"https://www.consumerhealthdigest.com/eyelash-care/does-trimming-make-eyelashes-grow-longer.html"
+    },
+
+    {
+        "title": "impure period",
+        "year": "BC 5",
+        "image": "period.jpg",
+        "category": ["MYTH","PROPAGANDA"],
+        "description": "The belief that women on their period are impure began in ancient religious practices and perpetuates stigma, restricting women's spiritual and social participation despite lacking scientific basis."
+        , "source":"https://thoughtcatalog.com/lorenzo-jensen-iii/2015/07/heres-what-the-worlds-major-religions-say-about-your-period/"
+    },
+
+    {
+        "title": "Pizzagate",
+        "year": "2016",
+        "image": "pizza.jpg",
+        "category": ["CONSPIRACY","PROPAGANDA"],
+        "description": "Pizzagate was a conspiracy during the 2016 U.S. election, claiming a D.C. pizzeria was a front for a child trafficking ring tied to Hillary Clinton. Investigations proved this claim entirely false."
+        , "source":"https://www.nytimes.com/2016/11/21/technology/fact-check-this-pizzeria-is-not-a-child-trafficking-site.html"
+    },
+
+    {
+        "title": "IKEA ghost advertisement",
+        "year": "2017",
+        "image": "ikea.jpg",
+        "category": ["HOAX"],
+        "description": "The IKEA ghost advertisement was a fake video claiming IKEA would provide free products if ghosts appeared during furniture assembly. It was unrelated to the company and meant to attract attention online."
+        , "source":"https://www.youtube.com/watch?v=5qF8vuH8aBk"
+    },
+
+    {
+        "title": "Pasta From China",
+        "year": "2015",
+        "image": "pasta.jpg",
+        "category": "HOAX",
+        "description": "The claim on Baidu suggested pasta originated in China and was brought to Italy by Marco Polo. However, historical evidence shows pasta existed in Italy long before his travels, debunking the theory"
+        , "source":"https://www.todayonline.com/world/did-pasta-come-china-absolutely-not-historians-say"
+    },
+
+    {
+        "title": "Dokdo is Japanese territory",
+        "year": "1952",
+        "image": "dokdo.jpg",
+        "category": ["CONSPIRACY","PROPAGANDA","DENIALISM"],
+        "description": "Japan first claimed sovereignty over Dokdo in 1952, including the islets in Shimane Prefecture. However, historical evidence and international treaties support South Korea's control of Dokdo since 1954."
+        , "source":"https://dokdo.mofa.go.kr/eng/dokdo/reason.jsp"
+    },{
+        "title": "man made Hurricane Helene",
+        "year": "2024",
+        "image": "helene.png",
+        "category": ["CONSPIRACY","HOAX","PROPAGANDA"],
+        "description": "Hurricane Helene occurred in 2024, with conspiracy theorists claiming it was manipulated by the government for land seizure and lithium mining. Scientists countered that controlling hurricanes is beyond current capabilities."
+        , "source":"https://www.cbsnews.com/news/hurricane-helene-conspiracy-theories-lithium-mining-weather-control-fact-check/"
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+]
