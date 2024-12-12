@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Head content remains the same -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BULLSHIT INDEX</title>
+    <style>
+        /* 기존 CSS 스타일 */
+        @font-face {
+            font-family: 'Alte Haas';
+            src: url('AlteHaasGroteskRegular.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Alte Haas Bold';
+            src: url('AlteHaasGroteskBold.ttf') format('truetype');
+        }
+      
+        body {
+            font-family: Alte Haas, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0.4%;
+            color:#333;
+            overflow-y: scroll; /* Added to handle body scrolling while keeping header fixed */
+        }
+
+        /* Header Styling */
+        .header {
+            background: linear-gradient(to bottom,
+            rgba(244, 244, 244, 1) 0%,
+            rgba(244, 244, 244, 0.7) 50%,
+            rgba(244, 244, 244, 0.0) 100%);
+            backdrop-filter: blur(0.5px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 10%;
+            display: flex;
+            flex-wrap: wrap;
+             padding: 0.55% 0px 0px 1.16%;
+            z-index: 1000;
+        }
+        .header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                to bottom, 
+                rgba(244, 244, 244, 1) 0%,
+                rgba(244, 244, 244, 0.7) 50%,
+                rgba(244, 244, 244, 0.0) 100%
+            );
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            mask-image: linear-gradient(
+                to bottom, 
+                rgba(0, 0, 0, 1) 0%, 
+                rgba(0, 0, 0, 0.7) 50%, 
+                rgba(0, 0, 0, 0) 100%
+            );
+            mask-composite: intersect;
+            z-index: -1;
+        }
+        h1 {
+            margin: 0;
+            color: #333;
+            font-family: Alte Haas Bold, sans-serif;
+            width:22%;
+        }
+        .view-mode-button {
+            font-family: Alte Haas Bold, sans-serif;
+            background-color: #f4f4f4;
+
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width:10%;
+        }
+        .filter-button {
+            font-family: Alte Haas Bold, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            border:none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: block;
+            box-shadow: 0px 2px 10px rgba(51, 55, 3, 0.287);
+            font-size: 1vw;
+            gap: 0.36vw;
+            flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+        }
+        .view-mode-button:hover, .filter-button:hover {
+            background-color: #f4f4f4;
+            color: rgb(120, 120, 120);
+        }
+        .filter-button.active {
+            background-color: #333333b3; /* 클릭된 버튼 배경색 */
+            color: rgb(244, 244, 244); /* 클릭된 버튼 텍스트 색 */
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap:0.4%;
+            margin:1.4%;
+            margin-top: 6%;
+        }
+        .button-container1{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.36vw;
+            margin:0.7%;
+            align-items: start; 
+            width:5%;
+            flex-direction: column;
+        }
+        .button-container2{
+            display: flex; 
+            flex-wrap: wrap;
+            gap: 0.36vw;
+            margin:0.7%;
+            align-items: start; 
+            width:33.3%;justify-content: flex-start;
+            align-content: flex-start;
+            flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+        }
+
+        .button-container3{
+            display: flex; 
+            flex-wrap: wrap;
+            gap: 0.36vw;
+            margin:0.7%;
+            align-items: start; 
+            width:22%;justify-content: flex-start;
+            align-content: flex-start;
+            flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+        }
+        .button-container4{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top:0.7%;
+            align-items: start; 
+            flex-direction: column;
+            font-family: Alte Haas Bold, sans-serif;
+            width:3.6%;
+            z-index:2200;
+        }
+        .button-container4 button {
+            padding: 0;
+        }
+
+        .view-mode-button img {
+    width: 1.9vw; 
+    height: 1.9vw;
+    transition: filter 0.3s ease; /* 이미지 필터 전환 */
+}
+
+.title{font-family: Alte Haas Bold, sans-serif;display: flex; /* Flex 컨테이너로 설정 */
+    align-items: center; /* 수직 정렬 */
+    gap: 1%; /* 요소 간 간격 */
+    margin-bottom: 10px; /* 제목과 설명 간의 간격 */}
+.title1{background-color: #f4f4f4;
+            color: #333;
+            border:none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0px 2px 10px rgba(51, 55, 3, 0.287);display: inline-block;
+        padding:1% 3% 1% 3%;}
+
+            .title2{background-color: #f4f4f4;
+            color: #333;
+            border:none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0px 2px 10px rgba(51, 55, 3, 0.287);display: inline-block;padding:1% 3% 1% 3%;}
+.view-mode-button:hover img {
+    filter: brightness(1) invert(0.55); /* 호버 시 이미지 색상 반전 */
+}
+        .image-card {
+            position: relative;
+            width: 9%;
+font-size: 17.4px;
+font-size: 0.67vw;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            margin-bottom: 10px;
+            margin-top:2%;
+      
+            font-family: Alte Haas, sans-serif;
+        }
+
+        .image-card {
+    position: relative;
+    width: 9%;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 0.5%;
+    margin-top: 2%;
+    font-family: 'Alte Haas', sans-serif;
+    display: flex;
+    flex-direction: column; /* 세로 정렬 */
+    align-items: flex-start; /* 왼쪽 정렬 */
+}
+
+        .image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .image-card.expanded {
+
+            width: 15%;
+
+        }
+        .image-card.expanded img {
+            width: 100%;
+            height: auto;
+        }
+        .image-info {
+    display: none;
+    padding: 10px;
+    margin-top: 1%;
+width:100%;
+
+    margin-left: -10px; /* 이미지보다 왼쪽으로 이동 */
+    transition: all 0.3s ease; /* 부드러운 전환 효과 */
+}
+        .image-card.expanded .image-info {
+            display: block;
+        }
+        .hidden {
+            display: none !important;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .description{padding:0.5%; font-size: 20px; font-size: 0.8vw;line-height: 140%;}
+        .clickable-title {
+    margin: 0;
+    font-size: 2.6vw;
+    color: #333; /* Default color */
+    font-family: Alte Haas Bold, sans-serif;
+    width: 22%;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth transition */
+    z-index: 2200;
+}
+#info{ display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* 전체 화면 너비 */
+    height: 100vw;
+    background-color: #f4f4f4;
+
+    backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            
+    z-index: 1100;}
+/* Change color on hover */
+.clickable-title:hover {
+    color: rgb(120, 120, 120); /* Hover color */
+}
+.info-container{
+margin:1% 9% 20% 27.5%;
+font-size:1vw;
+line-height: 140%;
+
+color:#333
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header Section: Title and Buttons in a Single Row -->
+    <div class="header">
+        <h1 class="clickable-title" onclick="toggleInfo()">BULLSHIT INDEX</h1>
+        <div class="button-container4">
+            <button class="view-mode-button" onclick="location.href='description-page.html'"><img src="arrow2.png" alt="View Mode"></button>
+           
+        </div>
+        <div id="info">
+            <div class="info-container">
+                
+                We often feel vague fear or anxiety about the unknown, which leads us to form specific beliefs driven by a desire to control and understand. These beliefs can be seen as unconscious attempts to resolve uncertainty and create a safe zone away from the unknown. To alleviate anxiety, people sometimes fall into deception or give in to the desire to believe what they want. The need for certainty often results in misguided beliefs or misunderstandings.
+                <br><br>
+                These misunderstandings can arise from fear driven accusations, exaggerated expectations, or manipulation of information, leading to uncritical acceptance of certain beliefs. Over time, these beliefs spread within society, causing people to accept them as truth. From conspiracy theories and pseudoscientific claims to urban legends and propaganda, such ideas gain traction, often despite lacking evidence. When one side makes a claim, the other side challenges it, creating a tense back and forth. The side with stronger evidence prevails, while the other collapses. This cycle has repeated throughout human history. <br><br>
+                Bullshit Index is an archive of misleading beliefs, things once believed but now considered debunked or unfounded. The bullshit in this index ranges from lighthearted and humorous misunderstandings to serious, impactful deceptions that have shaped public perception or policy. This index captures how these beliefs are formed, spread, and eventually lead to disillusionment, focusing the social and psychological dynamics behind their persistence and eventual collapse.
+                
+                </div>
+         
+        </div>
+        
+        <div class="button-container1">
+            <button class="filter-button" onclick="toggleSort('AZ', this)">A-Z</button>
+            <button class="filter-button" onclick="toggleSort('oldest', this)">OLDEST</button>
+            <button class="filter-button" onclick="toggleSort('newest', this)">LATEST</button>
+        </div>
+        <div class="button-container2">
+            <button class="filter-button" onclick="toggleFilter('category', 'SUPERSTITION', this)">SUPERSTITION</button>     
+            <button class="filter-button" onclick="toggleFilter('category', 'CONSPIRACY', this)">CONSPIRACY</button>
+            <button class="filter-button" onclick="toggleFilter('category', 'SATIRE', this)">SATIRE</button>
+            <button class="filter-button" onclick="toggleFilter('category', 'MYTH', this)">MYTH</button>
+            <button class="filter-button" onclick="toggleFilter('category', 'MARKETING', this)">MARKETING</button>
+            <button class="filter-button" onclick="toggleFilter('category', 'SCAM', this)">SCAM</button>
+            <button class="filter-button" onclick="toggleFilter('category', 'MISBELIEF', this)">MISBELIEF</button>
+            <button class="filter-button" onclick="toggleFilter('category', 'URBANLEGEND', this)">URBANLEGEND</button>
+            
+            <button class="filter-button" onclick="toggleFilter('category', 'PROPAGANDA', this)">PROPAGANDA</button>
+            <button class="filter-button" onclick="toggleFilter('category', 'DENIALISM', this)">DENIALISM</button>
+            <button class="filter-button" onclick="toggleFilter('category', 'HOAX', this)">HOAX</button>
+            <button class="filter-button" onclick="toggleFilter('category', 'PSEUDOSCIENCE', this)">PSEUDOSCIENCE</button>
+            <button class="filter-button" onclick="toggleFilter('category', 'PHOBIA', this)">PHOBIA</button>
+        </div>
+        <div class="button-container3">
+            <button class="filter-button" onclick="toggleFilter('year', 'pre-1900', this)">PRE 1900</button>
+            <button class="filter-button" onclick="toggleFilter('year', '1900s', this)">1900s</button>
+            <button class="filter-button" onclick="toggleFilter('year', '1910s', this)">1910s</button>
+            <button class="filter-button" onclick="toggleFilter('year', '1920s', this)">1920s</button>
+            <button class="filter-button" onclick="toggleFilter('year', '1930s', this)">1930s</button>
+            <button class="filter-button" onclick="toggleFilter('year', '1940s', this)">1940s</button>
+            <button class="filter-button" onclick="toggleFilter('year', '1950s', this)">1950s</button>
+            <button class="filter-button" onclick="toggleFilter('year', '1960s', this)">1960s</button>
+            <button class="filter-button" onclick="toggleFilter('year', '1970s', this)">1970s</button>
+            <button class="filter-button" onclick="toggleFilter('year', '1980s', this)">1980s</button>
+            <button class="filter-button" onclick="toggleFilter('year', '1990s', this)">1990s</button>
+            <button class="filter-button" onclick="toggleFilter('year', '2000s', this)">2000s</button>
+            <button class="filter-button" onclick="toggleFilter('year', '2010s', this)">2010s</button>
+            <button class="filter-button" onclick="toggleFilter('year', '2020s', this)">2020s</button>
+        </div>
+      
+    </div>
+  
+
+    <div id="gallery-container" class="container">
+        <!-- Image cards will be dynamically generated here -->
+    </div>
+
+    <script>
+        const jsonFile = 'data.json';
+
+        let galleryData = []; // Original data from JSON
+        let currentData = []; // Data after applying filters and sorting
+        let currentFilters = {
+            category: null,
+            year: null
+        };
+        let currentSort = {
+            type: null // No sort by default
+        };
+
+        // Fetch and load JSON data
+        fetch(jsonFile)
+            .then(response => response.json())
+            .then(data => {
+                galleryData = data;
+                currentData = [...galleryData];
+                applyFiltersAndSorting(); // Initial render
+            })
+            .catch(error => console.error('Error loading JSON data:', error));
+
+        // Apply current filters and sorting
+        function applyFiltersAndSorting() {
+            let filteredData = [...galleryData];
+
+            // Apply category filter
+            if (currentFilters.category) {
+                filteredData = filteredData.filter(item => {
+                    if (!item.category) return false;
+                    if (Array.isArray(item.category)) {
+                        // Category is an array
+                        return item.category.some(cat => cat.toUpperCase() === currentFilters.category.toUpperCase());
+                    }
+                    // Category is a single string
+                    return item.category.toUpperCase() === currentFilters.category.toUpperCase();
+                });
+            }
+
+            // Apply year filter
+            if (currentFilters.year) {
+                filteredData = filteredData.filter(item => {
+                    const itemYear = item.year;
+                    const filterYear = currentFilters.year;
+                    if (filterYear === 'pre-1900') {
+                        return parseInt(itemYear) < 1900 || itemYear.includes('BC');
+                    } else if (filterYear === 'all') {
+                        return true;
+                    } else {
+                        return itemYear && itemYear.startsWith(filterYear.slice(0, 3));
+                    }
+                });
+            }
+
+            // Apply sorting
+            if (currentSort.type === 'oldest') {
+                filteredData.sort((a, b) => {
+                    const yearA = a.year.includes('BC')
+                        ? (a.year.includes('unknown') ? -Infinity : -parseInt(a.year.replace('BC', '').trim()))
+                        : parseInt(a.year);
+                    const yearB = b.year.includes('BC')
+                        ? (b.year.includes('unknown') ? -Infinity : -parseInt(b.year.replace('BC', '').trim()))
+                        : parseInt(b.year);
+
+                    // BC unknown priority
+                    if (yearA === -Infinity) return -1;
+                    if (yearB === -Infinity) return 1;
+
+                    // Handle invalid data
+                    if (isNaN(yearA)) return 1; // Invalid data goes to the end
+                    if (isNaN(yearB)) return -1;
+                    return yearA - yearB;
+                });
+            } else if (currentSort.type === 'newest') {
+                filteredData.sort((a, b) => {
+                    const yearA = a.year.includes('BC')
+                        ? (a.year.includes('unknown') ? -Infinity : -parseInt(a.year.replace('BC', '').trim()))
+                        : parseInt(a.year);
+                    const yearB = b.year.includes('BC')
+                        ? (b.year.includes('unknown') ? -Infinity : -parseInt(b.year.replace('BC', '').trim()))
+                        : parseInt(b.year);
+
+                    // BC unknown last
+                    if (yearA === -Infinity) return 1;
+                    if (yearB === -Infinity) return -1;
+
+                    // Handle invalid data
+                    if (isNaN(yearA)) return -1; // Invalid data goes to the start
+                    if (isNaN(yearB)) return 1;
+                    return yearB - yearA;
+                });
+            } else {
+                // Default to A-Z sorting
+                filteredData.sort((a, b) => a.title.localeCompare(b.title));
+            }
+
+            currentData = filteredData;
+            renderGallery(currentData);
+        }
+
+        // Render the gallery
+        function renderGallery(data) {
+            const container = document.getElementById('gallery-container');
+            container.innerHTML = ''; // Clear existing content
+            data.forEach(item => {
+                const imageCard = document.createElement('div');
+                imageCard.classList.add('image-card');
+                imageCard.setAttribute('data-year', item.year);
+                imageCard.setAttribute('data-category', item.category);
+
+                // Click event to expand image card and show info
+                imageCard.addEventListener('click', () => {
+                    toggleExpand(imageCard);
+                });
+
+                imageCard.innerHTML = `
+                    <img src="${item.image}" alt="${item.title}">
+                    <div class="image-info">
+    <div class="title">
+        <div class="title1">${item.title.toUpperCase()}</div>
+        <div class="title2">${item.year}</div>
+    </div>
+    <div class="description">
+        ${item.description}
+    </div>
+</div>
+                `;
+                container.appendChild(imageCard);
+            });
+        }
+
+        // Toggle filter function
+        function toggleFilter(filterType, value, button) {
+            if (currentFilters[filterType] === value) {
+                // If the same filter is clicked again, remove the filter
+                currentFilters[filterType] = null;
+                button.classList.remove('active');
+            } else {
+                // Apply new filter
+                currentFilters[filterType] = value;
+                // Remove 'active' class from other buttons in the same group
+                if (filterType === 'category') {
+                    document.querySelectorAll(`.button-container2 .filter-button`).forEach(btn => btn.classList.remove('active'));
+                } else if (filterType === 'year') {
+                    document.querySelectorAll(`.button-container3 .filter-button`).forEach(btn => btn.classList.remove('active'));
+                }
+                button.classList.add('active');
+            }
+            applyFiltersAndSorting();
+        }
+
+        // Toggle sort function
+        function toggleSort(sortType, button) {
+            if (currentSort.type === sortType) {
+                // If the same sort is clicked again, remove sorting
+                currentSort.type = null;
+                button.classList.remove('active');
+            } else {
+                // Apply new sort
+                currentSort.type = sortType;
+                // Remove 'active' class from other buttons in the same group
+                document.querySelectorAll(`.button-container1 .filter-button`).forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+            }
+            applyFiltersAndSorting();
+        }
+
+        // Image card expand and information display function
+        function toggleExpand(element) {
+            document.querySelectorAll('.image-card.expanded').forEach(card => {
+                if (card !== element) {
+                    card.classList.remove('expanded');
+                }
+            });
+            element.classList.toggle('expanded');
+        }
+        function toggleInfo() {
+    const infoDiv = document.getElementById('info');
+    if (infoDiv.style.display === 'none' || infoDiv.style.display === '') {
+        infoDiv.style.display = 'block';
+    } else {
+        infoDiv.style.display = 'none';
+    }
+}
+    </script>
+</body>
+</html>
